@@ -1,6 +1,17 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const reverseString = function (string) {
+    return string.split("").reverse().join("");
+  }
+
+  if (word === reverseString(word)) {
+    return true;
+  } else {
+    return false;
+  }
 }
+
+
 
 /* 
   Add your pseudocode here
@@ -8,6 +19,7 @@ function isPalindrome(word) {
 
 /*
   Add written explanation of your solution here
+
 */
 
 // You can run `node index.js` to view these console logs
